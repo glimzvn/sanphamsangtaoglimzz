@@ -1,0 +1,79 @@
+.form-control{
+    background-color: #2B4043;
+    border: none;
+    color: #f2e3bb;
+}
+
+.form-control::placeholder{
+    color: #f2e3bb;
+}
+
+input.form-control:focus::placeholder{
+    color: #2B4043;
+}
+
+.button_1
+{    
+    border: 3px solid #f2e3bb;
+    border-radius: 20px;
+    padding: 5px 7px 5px 7px;
+    background-color: transparent;
+    color: #f2e3bb;
+    margin: 10px;
+}
+
+.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.shake{
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    border: 3px solid salmon;
+}
+
+.navbar-nav {
+    font-family: 'Nexa';
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+#mobile_ad{    
+    height: 90vh;
+    background-image: url("../res/images/mockup.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #2B4043;
+    padding-top: 2.5vh;
+}
+
+#mobile_ad img{
+    width: 20vw;
+}
+
+footer{
+    background-color: #232526;
+}
+
+footer .btn {
+    margin-top: 10px!important;
+    filter: brightness(0) saturate(100%) invert(97%) sepia(63%) saturate(543%) hue-rotate(317deg) brightness(101%) contrast(90%);
+}
+
+footer .btn:hover{
+    filter: invert(9%) sepia(11%) saturate(358%) hue-rotate(155deg) brightness(93%) contrast(85%);
+}

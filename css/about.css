@@ -1,0 +1,71 @@
+h5 {
+    font-family: 'Nexa';
+}
+  
+.banner {
+    background: #232526;
+    color: #F2E3BB;
+}
+  
+.name {
+    margin-top: 30%;
+}
+  
+  
+img {
+    height: 60%;
+    width:60%;
+}
+
+.navbar img {
+    height: 100%;
+    width: 100%;
+}
+
+.instruct img {
+    border: #f2e3bb solid 2px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.instruct p {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.colored-text {
+    color: #f2e3bb;
+}
+  
+.who1{
+    background-color: #F2E3BB;
+    color: #2B4043;
+    text-align: center;
+}
+  
+.who2 {
+    background-color: #2B4043;
+    color: #F2E3BB;
+    text-align: center;
+}
+  
+hr {
+    background:linear-gradient(45deg,#1ccebc,#6ac5de);
+    height: 3px;
+    width: 90px;
+    margin: 0 0 5px 0;
+}
+  
+.why{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+  
+.navbar {
+    z-index: 10 !important;
+}
+
+.technique img{
+    object-fit: contain;
+}

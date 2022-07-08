@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'NexaBold';
+  src: url('../res/font/nexa_bold.ttf');
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('../res/font/nexa_book.otf');
+}
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
+
+body { 
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+} 
+
+body *{  
+  transition: all 0.5s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3, h4 {
+  font-family: NexaBold;
+  color: #f2e3bb;
+}
+
+h5, p, li, a, button, label, select {
+  font-family: Nexa;
+}
+
+@keyframes landing_background_move {
+  from {
+    background-position: 0 0;
+  }
+  to {
+      background-position: -10000px -10000px;
+  }
+}
+
+.card {
+  height: 75vh;
+  width: auto;
+  max-width: 80vw;
+  margin: auto auto !important;
+  border-radius: 20px;
+  color: black;
+  margin: 1rem;
+  text-align: center;
+  padding: 0;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    margin-top: 2rem;
+  }
+
+.background{
+  z-index: -1;
+  margin-bottom: 0px;
+  /*margin-top: 70px;*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url('../res/images/landing_background.png');
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: 0 0;
+  animation: landing_background_move 500s linear infinite;
+  height: 100%;
+  width: 100%; 
+}
+
+.jumbotron{
+  background: transparent !important;
+  padding-bottom: 0px;
+  padding-top: 5vh;
+  width: 90vw;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.jumbotron h1{
+  padding-bottom: 5vh;
+}
+
+.card {
+  color: #f2e3bb;
+  background: #353637;
+  padding: 3px;
+}
+
+.loading .spinner-border {
+  color: #f2e3bb;
+  text-align: center;
+  width: 5vh;
+  height: 5vh;
+}
+
+/* .card:hover{
+  transform: scale(1.08);
+} */
+
+.card img{
+  border-radius: 15px;
+}
+
+.card input, .card textarea {
+  color: #f2e3bb;
+  background: #353637;
+  font-family: 'NexaBold';
+  border: none;
+  font-size: 20px;
+  -moz-appearance: textfield !important;
+}
+
+.card input::-webkit-outer-spin-button,
+.card input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+.card input:active {
+  color: #f2e3bb;
+  background: #353637;
+  font-family: 'NexaBold';
+}
+
+.card .btn-info {
+  border: 3px solid #f2e3bb;
+  border-radius: 20px;
+  padding: 5px 7px 5px 7px;
+  background-color: transparent;
+  color: #f2e3bb;
+  background: #353637;
+}
+
+.card .btn-info:hover {
+  color: #353637;
+  background: rgba(242, 227, 187);
+}
+
+.card .btn-info:active:focus {
+  color: #353637;
+  background: rgba(242, 227, 187);
+  box-shadow: inset 0 -1px 0 #f2e3bb !important;
+}
+
+.card span {
+  color: #f2e3bb;
+}
+
+.swiper-container {
+  width: auto !important;
+  height: 75vh !important;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 50% !important;
+  width: auto;
+  padding-bottom: 3vh !important;
+}
+
+.card-img-top{
+  width: auto;
+  height: 65%;
+  object-fit: cover;
+}
+
+.card-title {
+  margin-top: 1rem !important;
+}
+
+@media only screen and (max-height: 695px) {
+  .card-img-top{
+    height: 65%;
+  }
+
+  .card-body {
+    padding: 5px;
+  }
+
+  .card-title h3 {
+    font-size: 1.25rem;
+  }
+
+  .btn-info {
+    margin-top: 0px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-height: 575px) {
+  .card-img-top{
+    height: 60%;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .card-img-top{
+    height: 55%;
+  }
+}
+
+@media only screen and (max-height: 440px) {
+  .card-img-top{
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  div#topic-card {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .card-title {
+    margin-top: .25rem !important;
+    margin-bottom: .25rem !important;
+  }
+
+  .card .btn-info {
+    margin-top: .25rem !important;
+  }
+}
+
